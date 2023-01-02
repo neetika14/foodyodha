@@ -5,10 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>HOME</title>
     
 </head>
 <body>
-    <script src="script.js"></script>
+    
+    <!-- navBar -->
+    <section id="header">
+        <a href="#"><img src="photos/logo.jpg" class="logo alt="logo"></a>
+
+        <div>
+            <ul id="navBar">
+                <li><a class="active" href="Index.html">Home</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contach.html">Contact</a></li>
+                <li><a href="Cart.html"><i class="fa-regular fa-bag-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <!--carousel-->
+    <div class="carousel-container">
+        <div class="carousel-box">
+          <div class="carousel">
+            <img src="https://cdn.pixabay.com/photo/2022/12/13/18/00/autumn-7653897__340.jpg" alt="Foto-1" />
+            <div class="testimonial">
+              <p class="testimonial-text">
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+                nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit
+                quo sunt hic illo fugit."
+              </p>
+              <p class="testimonial-author">Maria de Almeida</p>
+              <p class="testimonial-job">
+                Senior Product Manager at EDP Comercial
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-box">
+          <div class="carousel">
+            <img src="https://cdn.pixabay.com/photo/2022/11/29/11/31/robin-7624340__340.jpg" alt="foto-2" />
+            <div class="testimonial">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio natus velit sequi magni, a dolore,
+              </p>
+              <p class="testimonial-author">John Martines</p>
+              <p class="testimonial-job">
+                Junior Product Manager at EDP Comercial
+              </p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-box">
+          <div class="carousel">
+            <img src="https://cdn.pixabay.com/photo/2022/12/14/12/40/grass-7655335__340.jpg" alt="Foto-3" />
+            <div class="testimonial">
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Exercitationem facere labore et assumenda tempora! Officiis
+              </p>
+              <p class="testimonial-author">Johan Maritta</p>
+              <p class="testimonial-job">Product Manager at EDP Comercial</p>
+            </div>
+          </div>
+        </div>
+      
+        <button class="btn btn--left" onclick="plusSlides(-1)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button class="btn btn--right" onclick="plusSlides(1)">
+          <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      
+        <div class="dots">
+          <span class="dot dot--fill" onclick="currentSlide(1)"></span>
+          <span class="dot dot--fill" onclick="currentSlide(2)"></span>
+          <span class="dot dot--fill" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
 </body>
 </html>
